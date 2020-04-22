@@ -1,0 +1,142 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.letter {
+  width: 90%;
+  /* margin: 0 auto; */
+  height: 600px;
+  background-color: white;
+  box-shadow: 0 20px 20px 10px #AAA;
+  transition: 1s;
+  position: relative;
+  background-color: red;
+  z-index: 1;
+}
+.letter-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 1s;
+  margin: 0;
+  padding: 0;
+  z-index: 6;
+  background-color: rgba(0,0,0,0.1);
+}
+.triangle-in {
+  width: 0;
+  height: 0;
+  border-left: 45vw solid transparent;
+  border-right: 45vw solid transparent;
+  transition: 1s ease-in;
+  border-top: 300px solid rgb(249, 232, 181);
+  position: absolute;
+}
+.triangle-out {
+  width: 0;
+  height: 0;
+  border-left: 45vw solid transparent;
+  border-right: 45vw solid transparent;
+  transition: 1s ease-out;
+  border-bottom: 0px solid #f00;
+}
+.triangle-others {
+  width: 0;
+  height: 0;
+  border-top: 300px solid transparent;
+  border-bottom: 300px solid rgb(249, 232, 181);
+  border-right: 45vw solid rgb(249, 232, 181);
+  border-left: 45vw solid rgb(249, 232, 181);
+  position: absolute;
+  top: 0;
+  z-index: 3;
+
+}
+.text-overlay {
+  width: 100%;
+  height: 10%;
+  top: 70%;
+  text-align: center;
+  position: absolute;
+  font-size: 3em;
+  font-family: "Arial";
+  z-index: 4;
+}
+.paper {
+  width: 60%;
+  height: 450px;
+  margin: 0 auto;
+  bottom: 0;
+  background-color: white;
+  z-index: 2;
+  margin-top: 150px;
+  display: none;
+}
+.overlay {
+  transition: 1s;
+  z-index: 10;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.7);
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+}
+.overlay-paper {
+  width: 70%;
+  height: auto;
+  background-color: white;
+  font-family: "Arial";
+  font-size: 2em;
+  padding: 10%;
+
+  overflow: auto;
+  margin-top: 100px;
+  padding-bottom: 15%;
+}
+.img-overlay {
+  z-index: 10;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.7);
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+img {
+  width: 80%;
+  height: 80%;
+}
+.img {
+  width: 90%;
+  height: auto;
+}
+.img-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.img-button {
+  background-color: #F9E4B7;
+  width: 100px;
+  height: 100px;
+  margin-right: 50px;
+  margin-left: 25px;
+  margin-top: 10%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
